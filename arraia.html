@@ -6,31 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arraià da Lucia</title>
 <style>
-  body{
+  *, body{
     top: 0;
     left: 0;
     box-sizing: border-box;
   }
-  .image{
-    z-index: 2;
-  }
-  .sound {
-    position: relative;
-    z-index: 1;
-  }
 </style>
 </head>
 <body>
-  <div class="image">
-<img href="./conviteJunino.png"></img>
-  </div>
-  <br><br>
-  <div class="sound">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/IGrauX6iYUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <br><br>
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.6591918569545!2d-47.9883395891788!3d-15.943756770918332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a292756124b5f%3A0x61983739e28c574f!2sAcademia%20Park%20Way%20Quadra%2027!5e0!3m2!1spt-BR!2sbr!4v1656106441986!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div style="display:inline-flex;">
+    <div class="card">
+      <div class="image">
+        <a><img src="./conviteJunino.png" style="max-width: 500px;max-height:1000px;"></img></a>
+      </div>
+    </div>
+    
+    <div class="map" style="margin-left: 50px;">
+      <h2>Mapa para o Arraià</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.6591918569545!2d-47.9883395891788!3d-15.943756770918332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a292756124b5f%3A0x61983739e28c574f!2sAcademia%20Park%20Way%20Quadra%2027!5e0!3m2!1spt-BR!2sbr!4v1656106441986!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </body>
 </html>
