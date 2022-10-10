@@ -1,77 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arraià da Lucia</title>
-<style>
-  *, body{
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Release Notes Zaelo</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-  .card {
-    display:inline-flex;
-  }
+      *,
+      body {
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
 
-  .map2 {
-      display: none;
-    }
+      li a {
+
+        color: #202020 !important;
+      }
+
+      #footerBg {
+          background-color: #F7F7F7;
+          padding-bottom: 30px !important;
+        }
+
+        #footerTexto {
+          font-size: 11px !important;
+          padding-left: 35vw !important;
+          margin-top: -45px !important;
+        }
+
+      
+      @media screen and (min-width: 1400px) {
 
 
-  @media screen and (max-width:760px) {
-    body {
-      display: column;
-    }
-    .card {
-      display: column;
-    }
 
-    .image {
-      max-width: 80vw;
-      max-height: 80vh;
-      display: column;
-      overflow: fit-content;
-    }
 
-    .map2 {
-      display: column;
-    }
 
-    iframe {
-      display: column;
-    }
 
-    .map {
-      display: none;
-    }
 
-  }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div>
-      <div class="image">
-        <a><img src="./assets/conviteJunino.png" style="max-width: 500px;max-height:1000px;"></img></a>
+
+
+
+
+      }        
+        
+      @media screen and (max-width: 1399px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+        
+        
+        
+        
+      @media screen and (max-width: 1199px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+      
+      @media screen and (max-width: 991px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+
+
+
+      @media screen and (max-width: 767px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+
+      
+      @media screen and (max-width: 575px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+
+      @media screen and (max-width: 430px) {
+
+
+
+
+
+
+
+
+
+
+
+      }
+
+      @media screen and (max-width: 320px) {
+        br {
+          display: none;
+        }
+
+        #tituloTitulo {
+          font-size: 50px !important;
+          padding: 20px;
+        }
+
+        #tituloSubtitulo {
+          padding: 25px;
+        }
+
+        .zsocial {
+          margin-bottom: 20px !important;
+        }
+
+        #imgAtualizacao {
+          width: 90vw !important;
+        }
+
+        #atuaizacaoTexto {
+          width: 90vw !important;
+          margin-bottom: 30px !important;
+        }
+
+        #atualizacaoAtualizacao {
+          margin-left: 3px !important;
+          margin-top: 50px !important;
+          margin-bottom: 20px !important;
+        }
+
+        #divItem1 {
+          width: 80vw !important;
+        }
+
+        #divItem1 #item1Img1 {
+          width: 80vw !important;
+        }
+
+        #cardBody1, #cardBody2, #cardBody3  {
+          width: 80vw !important;
+          margin-left: -45px !important;
+        }
+
+        #footerBg {
+          background-color: #F7F7F7;
+          padding-bottom: 30px !important;
+        }
+
+        #footerTexto {
+          font-size: 10px !important;
+          padding-left: 25px !important;
+        }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://i.imgur.com/FPTL4AG.png"
+            alt="Bootstrap"
+            width="130"
+            height="45"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <br /><br /><br /><br /><br />
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <section>
+            <h1
+              id="tituloTitulo"
+              style="
+                display: table;
+                margin: 0 auto;
+                font-size: 68px;
+                font-weight: 700;
+              "
+                >
+              O que temos de novidades
+            </h1>
+            <br />
+            <h5
+              id="tituloSubtitulo"
+              style="display: table; margin: 0 auto;font-weight: 400;"
+              >
+              Notas das Atualizações & Novos Módulos
+            </h5>
+
+            <br/><br/>
+
+            <div class="zsocial" style="display: inline-flex; margin-left: 59vw;">
+              <a href="#" style="text-decoration: none !important; color: #202020;"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+              <a href="#" style="text-decoration: none; color: #202020;"><i class="bi bi-whatsapp"></i></a>&nbsp;&nbsp;
+              <a href="#" style="text-decoration: none; color: #202020;"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+              <a href="#" style="text-decoration: none; color: #202020;"><i class="bi bi-twitter"></i></a>
+            </div>
+          </section>
+
+          <br />
+
+          <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXBkYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+            alt="update"
+            id="imgAtualizacao"
+            style="border-radius: 14px; width: 65vw; display: table; margin: auto;"
+            />
+
+
+          <br /><br /><br /><br />
+
+          <section>
+            <p id="atuaizacaoTexto" style="
+              display: table;
+              margin: 0 auto;
+              padding: 30px;
+              text-align: center;
+              width: 65vw;
+              line-height: 1.8rem;
+              "
+              >
+            
+              Olá, nesta quinzena tivemos algumas atualizações importantes no universo de sistemas Zaelo<br/>
+              e todas as mudanças que fazemos são pensando em você 😊 quer ver o que a gente preparou dessa vez?<br/>
+              Dá uma olhada aqui embaixo na sequência...<br/><br/>
+            </p>
+
+            <br />
+
+            <h4 id="atualizacaoAtualizacao"
+              style="font-size:30px; font-weight: 700; display: table; width: 65vw; margin: 0 auto;"
+              >Atualizações</h4>
+
+              <br/><br/>
+            
+            <div>
+              <div class="container" style="width: 70vw;">
+                <div class="row" style="margin-right: 25px; border: none;">
+                  <div class="card mb-5" style="margin-right: 25px; border: none;">
+                    <div class="row g-0" style="padding: 20px">
+                      <div id="divItem1" class="col-md-4">
+                        <img
+                          id="item1Img1"
+                          src="https://media.tenor.com/BxuhqfpyRFwAAAAC/loading-system.gif"
+                          class="img-fluid rounded-start"
+                          alt="edital"
+                          style="
+                            align-self: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            width: 250px;
+                            height: 185px;
+                            border-radius: 15px;
+                            margin-top: 15px;
+                            "
+                            />
+                      </div>
+                      <div class="col-md-8" >
+                        <div id="cardBody1" class="card-body">
+                          <h5 id="item1Titulo1" class="card-title text-start">
+                            Lorem title
+                          </h5>
+                          <p id="item1Descricao1" class="card-text text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ut doloremque commodi libero id porro ipsa.
+                            Eum architecto quis distinctio, soluta sint a
+                            voluptate non repellat explicabo vero odit
+                            doloremque provident natus laudantium, corporis
+                            dignissimos vel optio error.
+                          </p>
+                          <p
+                            class="card-text text-end"
+                            style="text-decoration: none; color: rgb(0, 0, 0); margin-right: 30px;"
+                            >
+                            <a
+                              href="#"
+                              id="item1Link1"
+                              style="text-decoration: none">
+                              <small class="text-muted">
+                                Lorem ipsum dolor sit amet</small>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="container" style="width: 70vw;">
+                <div class="row" style="margin-right: 25px; border: none;">
+                  <div class="card mb-5" style="margin-right: 25px; border: none;">
+                    <div class="row g-0" style="padding: 20px">
+                      <div class="col-md-4">
+                        <img
+                          id="item1Img2"
+                          src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3lzdGVtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          class="img-fluid rounded-start"
+                          alt="edital"
+                          style="
+                            align-self: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            width: 250px;
+                            height: 185px;
+                            border-radius: 15px;
+                            margin-top: 15px;
+                            "
+                            />
+                      </div>
+                      <div class="col-md-8" >
+                        <div id="cardBody2" class="card-body">
+                          <h5 id="item1Titulo2" class="card-title text-start">
+                            Lorem title
+                          </h5>
+                          <p id="item1Descricao2" class="card-text text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ut doloremque commodi libero id porro ipsa.
+                            Eum architecto quis distinctio, soluta sint a
+                            voluptate non repellat explicabo vero odit
+                            doloremque provident natus laudantium, corporis
+                            dignissimos vel optio error.
+                          </p>
+                          <p
+                            class="card-text text-end"
+                            style="text-decoration: none; color: rgb(0, 0, 0); margin-right: 30px;"
+                            >
+                            <a
+                              href="#"
+                              id="item1Link2"
+                              style="text-decoration: none">
+                              <small class="text-muted">
+                                Lorem ipsum dolor sit amet</small>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="container" style="width: 70vw;">
+                <div class="row" style="margin-right: 25px; border: none;">
+                  <div class="card mb-5" style="margin-right: 25px; border: none;">
+                    <div class="row g-0" style="padding: 20px">
+                      <div class="col-md-4">
+                        <img
+                          id="item1Img3"
+                          src="https://images.unsplash.com/photo-1541506618330-7c369fc759b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM4fHx0ZWNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          class="img-fluid rounded-start"
+                          alt="edital"
+                          style="
+                            align-self: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            width: 250px;
+                            height: 185px;
+                            border-radius: 15px;
+                            margin-top: 15px;
+                            "
+                            />
+                      </div>
+                      <div class="col-md-8" >
+                        <div id="cardBody3" class="card-body">
+                          <h5 id="item1Titulo3" class="card-title text-start">
+                            Lorem title
+                          </h5>
+                          <p id="item1Descricao3" class="card-text text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ut doloremque commodi libero id porro ipsa.
+                            Eum architecto quis distinctio, soluta sint a
+                            voluptate non repellat explicabo vero odit
+                            doloremque provident natus laudantium, corporis
+                            dignissimos vel optio error.
+                          </p>
+                          <p
+                            class="card-text text-end"
+                            style="text-decoration: none; color: rgb(0, 0, 0); margin-right: 30px;"
+                            >
+                            <a
+                              href="#"
+                              id="item1Link3"
+                              style="text-decoration: none">
+                              <small class="text-muted">
+                                Lorem ipsum dolor sit amet</small>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <br /><br /><br /><br /><br />
+
+            <p
+              id="tituloFeedback" style="
+              display: table;
+              margin: 0 auto;
+              padding: 30px;
+              text-align: center;
+              width: 65vw;
+              font-size: 20px;
+              "
+
+              >
+              Dê seu feedback para a nossa equipe de desenvolvimento é
+              só <a href="mailto:ti@zaelo.com.br?subject=Feedback das atualizações&body=Olá equipe de desenvolvimento meu feedback para vocês é: ""><span>clicar aqui!</span></a>
+            </p>
+          </section>
+
+        </div>
       </div>
     </div>
+
+    <br /><br />
+
+    <footer>
+
+      <div id="footerBg">
+        <div id="hr">
+          <hr>
+        </div>
+        <br/><br/>
+        <div id="footerTexto">
+          @ - Zaelo &reg; &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Todos os Direitos Reservados.&nbsp;&nbsp; - &nbsp;&nbsp; <a style="color: #202020 !important;" href="https://www.zaelo.com.br">Politica de Privacidade</a>
+        </div>
+      </div>
+
+
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
     
-    <div class="map" style="margin-left: 50px;">
-      <h2>Mapa para o Arraià</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.3544282129774!2d-47.99005768526212!3d-15.942856988959086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6598623225cbcbf!2zMTXCsDU2JzM0LjMiUyA0N8KwNTknMTYuMyJX!5e0!3m2!1spt-BR!2sbr!4v1656110770754!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-  <br><br><br><br><br><br>
-  <div class="map2" style="margin-top: 20px;">
-    <h2>Mapa para o Arraià</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.3544282129774!2d-47.99005768526212!3d-15.942856988959086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6598623225cbcbf!2zMTXCsDU2JzM0LjMiUyA0N8KwNTknMTYuMyJX!5e0!3m2!1spt-BR!2sbr!4v1656110770754!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <br><br><br>
-  <div>
-    <audio src="./assets/junina.mp3" preload="auto" controls autoplay loop></audio>
-  </div>
-</body>
+    <script src="atualizacao.json">
+      document.getElementById("demo").innerHTML = myArray;
+    </script>
+  </body>
 </html>
